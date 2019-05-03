@@ -1,0 +1,132 @@
+
+html {
+  height: 100%;
+}
+
+
+body {
+    position: relative;
+    min-height: 100%;
+    //background-color: #363941;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    border:0px;
+    font-family: Georgia;
+    color: black;
+    font-size: 16px;
+}
+
+
+button {
+    background-color: transparent;
+    //color: #B2B9AB;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border: none;
+    font-family: Georgia;
+}
+
+.buttons-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+#logo img{
+    padding-top: 50px;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+}
+p {
+    text-align: justify;
+    font-size: 16px;
+}
+.long-text{
+    padding-top: 50px;
+    max-width: 510px
+}
+
+.description-place {
+    margin: auto;
+    width: 70%;
+}
+.separator{
+    height: 100px;
+}
+.separator2{
+    height: 30px;
+}
+
+.tab-content{
+}
+
+.tab-link {
+}
+
+
+
+.realm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.realm .name-image {
+    display: flex;
+    width:40%;
+    justify-content: space-around;
+    padding-right: 20%
+}
+.realm .description {
+}
+.realm ul {
+    font-size: 15px;
+}
+.realm img {
+    width: 120px;
+    height: 120px;
+}
+.realm h2 {
+    font-size: 20px;
+}
+
+
+
+
+.footer-space{
+height: 130px;
+}
+.footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height:35px;
+  padding-top: 7px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  background-color: black;
+  display:flex;
+  align-items: center;
+}
+
+#footerImg{
+    height: 24px;
+}
+#footerTxt{
+padding-left: 10px;
+  color: #888;
+  font-size: 14px;
+  font-weight: normal;
+}
