@@ -51,6 +51,10 @@ p {
     text-align: justify;
     font-size: 16px;
 }
+li {
+padding-top: 3px;
+padding-bottom: 3px;
+}
 .long-text{
     padding-top: 50px;
     max-width: 510px
