@@ -17,6 +17,7 @@ body {
 
 h1 {
     font-size: 36px;
+    max-width:100%
 }
 p {
     text-align: justify;
@@ -39,11 +40,12 @@ li {
 
 @media only screen and (max-width: 560px) {
   .buttons-row{
-    visibility: hidden;
+    display:none;
+    visibility:hidden;
   }
   .uni-margins {
-    margin: 0;
-    padding: 0 7px;
+    width:96%;
+    margin: auto;
   }
 }
 
@@ -51,6 +53,7 @@ li {
 #main-img-background {
     background-image: url("res/background_main2.png");
     height: 200px;
+    width: 100%;
     background-color: black;
     background-position: center;
     background-size: auto 100%;
@@ -58,6 +61,7 @@ li {
 }
 
 .buttons-row {
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -68,10 +72,10 @@ li {
 }
 
 .buttons-row a{
+    padding: 0 4px;
     color: black;
     text-align: center;
     font-size: 20px;
-    padding-top: 20px;
     text-decoration: none;
 }
 .buttons-row a::after{
@@ -109,7 +113,7 @@ li {
 
 #about{
     padding-top: 50px;
-    max-width: 510px
+    max-width: 510px;
 }
 
 
