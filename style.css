@@ -1,14 +1,11 @@
-
 html {
   height: 100%;
   scroll-behavior: smooth;
 }
 
-
 body {
     position: relative;
     min-height: 100%;
-    //background-color: #363941;
     background-color: white;
     margin: 0px;
     padding: 0px;
@@ -16,68 +13,6 @@ body {
     font-family: Georgia;
     color: black;
     font-size: 16px;
-}
-
-
-button {
-    background-color: transparent;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    padding-top:20px;
-    padding-bottom:20px;
-    border: none;
-    font-family: Georgia;
-}
-
-.buttons-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: white;
-
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
-.buttons-row a{
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    padding-top:20px;
-    padding-bottom:20px;
-    font-family: Georgia;
-    text-decoration: none;
-}
-.buttons-row a::after{
-    text-align: center;
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    background-color: green;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-.buttons-row a:hover::after{
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-
-
-
-#logo img{
-    padding-top: 50px;
-    max-width: 50%;
-    display: block;
-    margin: auto;
 }
 
 h1 {
@@ -88,30 +23,102 @@ p {
     font-size: 16px;
 }
 li {
-padding-top: 3px;
-padding-bottom: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
-.long-text{
+
+.uni-margins {
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+}
+
+.separator{
+    height: 64px;
+}
+
+@media only screen and (max-width: 560px) {
+  .buttons-row{
+    visibility: hidden;
+  }
+  .uni-margins {
+    margin: 0;
+    padding: 0 7px;
+  }
+}
+
+
+#main-img-background {
+    background-image: url("res/background_main2.png");
+    height: 200px;
+    background-color: black;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.buttons-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.buttons-row a{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+.buttons-row a::after{
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.buttons-row a:hover::after{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#buttons-separator {
+    background-color: black;
+    height: 2px;
+}
+
+
+#logo img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
+
+
+#about{
     padding-top: 50px;
     max-width: 510px
 }
 
-.description-place {
-    margin: auto;
-    width: 70%;
-}
-.separator{
-    height: 100px;
-}
-.separator2{
-    height: 30px;
-}
 
-.tab-content{
-}
 
-.tab-link {
-}
+
+
+
+
+
 
 
 
@@ -140,6 +147,10 @@ padding-bottom: 3px;
 .realm h2 {
     font-size: 20px;
 }
+
+
+
+
 
 
 
