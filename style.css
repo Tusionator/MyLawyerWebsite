@@ -39,6 +39,18 @@ li {
 }
 
 
+#strona_glowna {
+    background-color: darkgreen;
+}
+
+#logo{
+  margin-top: 3em;
+  background: url(res/logo.svg) no-repeat left;
+  background-size: contain;
+  height: 3em;
+}
+
+
 #main-img-background {
     background-image: url("res/background_main2.png");
     height: 200px;
@@ -90,13 +102,6 @@ li {
     height: 2px;
 }
 
-
-#logo img{
-    max-width:100%;
-    height:auto;
-    display:block;
-    margin:auto;
-}
 
 
 #about{
