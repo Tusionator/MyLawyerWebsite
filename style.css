@@ -11,13 +11,17 @@ body {
     border: 0;
     color: white;
     background-color: black;
-    font-family: Verdana, Geneva, sans-serif !important;
+    font-family: "Source Sans Pro","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-size: 0.9em;
 }
 
 h1 {
+    font-weight: bold;
     font-size: 36px;
     max-width: 100%;
+    text-align: left;
+    padding-bottom: 0.8em;
+    text-transform: uppercase;
 }
 
 li {
@@ -32,7 +36,7 @@ li {
 }
 
 .separator {
-    height: 64px;
+    height: 5.3em;
 }
 
 #navbar {
@@ -93,9 +97,10 @@ li {
 }
 
 #strona_glowna {
-    height: 800px;
-    background-size: cover;
-    background: url("res/main.jpeg") no-repeat right;
+min-height: 40em;
+    background: url("res/main_1920.jpeg") right top;
+  background-repeat: no-repeat;
+  background-size: cover;
     display: flex;
     justify-content: center;
 
@@ -103,47 +108,45 @@ li {
 
 #about {
     text-shadow: 1px 1px black;
-    padding-top: 3em;
+    padding-top: 6em;
     width: 50%;
-}
-
-.bbb {
-    width: 100%;
-    height: 25em;
-    background-color: red;
-    mask-image: url("res/logo.svg");
-    -webkit-mask-image: url("res/logo.svg");
 }
 
 #realms-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+#zakres_praktyki {
+    background: #010101;
 
 }
-
 .realm {
-    margin: 1em;
-    width: 22em;
-    height: 22em;
-    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    margin: 0.1em;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    width: 20em;
+    align-items: flex-start;
+}
+.realm .realm-main {
+    height: 20em;
+    background-image:
+     linear-gradient(to bottom right, #1D4215, #061202);
+    color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-/*.realm::after {*/
-    /*content: " ";*/
-    /*visibility: visible;*/
-    /*position: relative;*/
-    /*height: 20px;*/
-    /*width: 100%;*/
-    /*background-color: #0d3349;*/
-/*}*/
 
 .realm h1 {
-    font-size: 2em;
+    padding: 1em;
+    text-shadow: 2px 2px black;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -155,28 +158,28 @@ li {
     width: 18em;
 }
 
-.realm:hover {
-    background-color: green;
+
+.realm-description {
+    visibility: hidden;
+    height: 0;
+
+    display: block;
+    text-align: left;
+    color: white;
 }
 
-.realm:hover h1 {
-    font-size: 1.5em;
-    text-align: center;
+.realm:focus {
+    outline: none;
+    background: none;
 }
+.realm:focus .realm-description{
+    visibility: visible;
+    height: auto;
 
-
-.realm .realm-description {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.realm .realm-description {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
 }
 
 .realm .realm-txt {
@@ -185,9 +188,6 @@ li {
     min-width: 300px;
 }
 
-.realm ul {
-    font-size: 15px;
-}
 
 .realm img {
     width: 120px;
@@ -198,7 +198,19 @@ li {
     font-size: 20px;
     margin-bottom: 0;
 }
+#wspolpraca {
+    background: url("res/cooperation.jpeg") top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+
+
+#kontakt {
+    background: #2c2f3a;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #contact-data {
     display: flex;
     flex-wrap: wrap;
@@ -208,17 +220,17 @@ li {
 }
 
 #contact-text {
-    width: 45%;
-    min-width: 300px;
+padding: 1em;
+    width: 55%;
 }
 
 #map {
-    width: 45%;
-    height: 400px;
+    width: 35%;
+    height: 23em;
 }
 
 .footer-space {
-    height: 130px;
+    height: 0em;
 }
 
 .footer {
@@ -226,27 +238,30 @@ li {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 35px;
-    padding-top: 7px;
-    padding-bottom: 14px;
-    padding-left: 20px;
+    height: 3em;
+    padding-top: 1.8em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
     background-color: black;
     display: flex;
     align-items: center;
 }
 
 #footerImg {
-    height: 24px;
+    height: 2em;
+    opacity: 0.5;
 }
 
 #footerTxt {
     padding-left: 10px;
-    color: #888;
+    opacity: 0.5;
     font-size: 14px;
     font-weight: normal;
 }
 
-@media only screen and (max-width: 560px) {
+
+
+@media (max-width: 600px) {
     .buttons-row {
         display: none;
         visibility: hidden;
@@ -257,6 +272,13 @@ li {
         margin: auto;
     }
 
+  #page {
+     background: url('images/white-zigzag-mobile.png') repeat-x;
+  }
+  #about {
+       text-shadow: 1px 1px black;
+       width: 100%;
+   }
     #contact-text {
         width: 100%;
         min-width: 300px;

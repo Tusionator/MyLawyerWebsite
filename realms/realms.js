@@ -3,28 +3,32 @@
 
 
 
-
-
-
-
-
-
-
-
-
 var Realm = {
-    props: ['title', 'image', 'tmp'],
+    props: {
+    title: String,
+    image: String,
+    tmp: Array
+    },
     template:
         `
-<div>
-      <div class="realm">
-        <h1>{{title}}</h1>
-        <div class="realm-img">
-          <img style="width: auto; height: 100%;" v-bind:src="image">
-        </div>
-      </div>
-      <div class="realm-description">{{tmp}}</div>
-     </div> 
+      <button class="realm">
+          <div class="realm-main">
+              <h1>{{title}}</h1>
+              <div class="realm-img">
+                  <img style="width: auto; height: 100%;"
+                  v-bind:src="image">
+              </div>
+          </div>
+          <div class="realm-description">
+          <ul>
+
+              <li v-for="item in tmp">
+                   {{ item }}<br>
+              </li>
+              </ul>
+
+          </div>
+      </button>
   `
 };
 new Vue({
@@ -33,3 +37,6 @@ new Vue({
         'realm': Realm,
     }
 });
+
+
+
