@@ -10,7 +10,7 @@ body {
     padding: 0;
     border: 0;
     color: white;
-    background-color: black;
+    background-color: #888888;
     font-family: "Source Sans Pro","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-size: 0.9em;
 }
@@ -20,9 +20,13 @@ h1 {
     font-size: 36px;
     max-width: 100%;
     text-align: left;
-    padding-bottom: 0.8em;
+    padding-bottom: 2em;
     text-transform: uppercase;
 }
+
+
+
+
 
 li {
     padding-top: 3px;
@@ -40,6 +44,7 @@ li {
 }
 
 #navbar {
+z-index: 100;
     background-color: #88888888;
     width: 100%;
     position: fixed;
@@ -112,92 +117,112 @@ min-height: 40em;
     width: 50%;
 }
 
-#realms-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 #zakres_praktyki {
-    background: #010101;
-
+    background: #050601;
 }
 .realm {
-    display: flex;
-    flex-direction: column;
-    margin: 0.1em;
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-    width: 20em;
-    align-items: flex-start;
+    background-image:
+     linear-gradient(to bottom right, #2c2f3a, #16181d);
+border: 0.2em solid #050601;
+     padding: 0;
+     display: flex;
+  flex-direction: column;
+     align-items:stretch;
 }
 .realm .realm-main {
-    height: 20em;
-    background-image:
-     linear-gradient(to bottom right, #1D4215, #061202);
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex: 1;
+    display:flex;
 }
-
-.realm h1 {
-    padding: 1em;
+.realm-title {
+width: 100%;
+height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    position: absolute;
+    color: #eac15a;
+    margin: 0;
     text-shadow: 2px 2px black;
     font-size: 1.5em;
     text-align: center;
-}
 
-.realm .realm-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10em;
-    width: 18em;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.realm-image {
+  width: 6em;
+  height: 6em;
+  background-color: #eac15a;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: bottom;
+    mask-position: bottom;
+}
+.realm h1 {
+    color: #eac15a;
+    padding: 1em;
+    margin: 0;
+    text-shadow: 2px 2px black;
+    font-size: 1.2em;
+    text-align: center;
+}
+.realm-title h1 {
+    padding: 0.3em;
 }
 
 
 .realm-description {
-    visibility: hidden;
-    height: 0;
+  opacity: 0;
+    padding:1em;
 
     display: block;
     text-align: left;
-    color: white;
+    color: #dddddd;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
 }
+.realm-description h1 {
+    font-size: 1em;
+ }
 
-.realm:focus {
+.realm:focus, .realm:hover {
     outline: none;
-    background: none;
 }
-.realm:focus .realm-description{
-    visibility: visible;
-    height: auto;
 
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+.realm:focus .realm-description{
+    opacity:1;
+
     -webkit-transition: all 1s ease-in-out 0s;
     transition: all 1s ease-in-out 0s;
 }
+.realm:focus .realm-title{
+    opacity:0;
 
-.realm .realm-txt {
-    width: 300px;
-    max-width: 300px;
-    min-width: 300px;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.realm:hover .realm-description{
+    opacity:1;
+
+    -webkit-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+}
+.realm:hover .realm-title{
+    opacity:0;
+
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
 }
 
 
-.realm img {
-    width: 120px;
-    height: 120px;
-}
 
-.realm h2 {
-    font-size: 20px;
-    margin-bottom: 0;
-}
+
+
+
+
 #wspolpraca {
     background: url("res/cooperation.jpeg") top left;
   background-repeat: no-repeat;
