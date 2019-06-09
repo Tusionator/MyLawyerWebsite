@@ -54,89 +54,119 @@
     </div>
 
 </div>
-
-<!--<div class="separator"></div>-->
-
-<!--<div id="zakres_praktyki">-->
-<!--<h1>ZAKRES PRAKTYKI</h1>-->
-<!--<div id="realms-list">-->
-<!--<realm-->
-<!--title="PRAWO CYWILNE"-->
-<!--image="./res/cywilne.svg"-->
-<!--v-bind:tmp="[-->
-<!--'windykacja należności',-->
-<!--'sprawy o zapłatę z tytułu wykonania umów',-->
-<!--'odszkodowania i zadośćuczynienia',-->
-<!--'szkody komunikacyjne',-->
-<!--'spory konsumenckie',-->
-<!--'ochrona dóbr osobistych',-->
-<!--'skargi pauliańskie',-->
-<!--'projekty umów i regulaminów']">-->
-<!--</realm>-->
-<!--<realm-->
-<!--title="PRAWO GOSPODARCZE"-->
-<!--image="./res/gospodarcze1.png"-->
-<!--v-bind:tmp="[-->
-<!--'zakładanie podmiotów prawnych',-->
-<!--'projekty uchwał, umów i statutów',-->
-<!--'wpisy do KRS',-->
-<!--'odpowiedzialność członków organów spółki',-->
-<!--'windykacja należności',-->
-<!--'kompleksowa obsługa prawna',-->
-<!--]">-->
-<!--</realm>-->
-<!--<realm-->
-<!--title="PRAWO SPADKOWE"-->
-<!--image="./res/spadkowe1.png"-->
-<!--v-bind:tmp="[-->
-<!--'stwierdzenie nabycia spadku',-->
-<!--'dział spadku',-->
-<!--'spis inwentarza',-->
-<!--'zachowek',-->
-<!--'niegodność dziedziczenia',-->
-<!--'zabezpieczenie spadku',-->
-<!--]">-->
-<!--</realm>-->
-<!--<realm-->
-<!--title="PRAWO RODZINNE"-->
-<!--image="./res/rodzinne.png"-->
-<!--v-bind:tmp="[-->
-<!--'rozwody i separacje',-->
-<!--'zmiany w zakresie sposobu wykonywania władzy rodzicielskiej',-->
-<!--'alimenty',-->
-<!--'kontakty',-->
-<!--'umowy małżeńskie majątkowe',-->
-<!--'podział majątku dorobkowego małżonków',-->
-<!--'ustalenie bądź zaprzeczenie ojcostwa',-->
-<!--'ubezwłasnowolnienie, opieka i kuratela'-->
-<!--]">-->
-<!--</realm>-->
-<!--<realm-->
-<!--title="PRAWO RZECZOWE"-->
-<!--image="./res/rzeczowe.png"-->
-<!--v-bind:tmp="[-->
-<!--'zniesienie współwłasności',-->
-<!--'służebności gruntowe',-->
-<!--'odszkodowanie za bezumowne korzystanie z nieruchomości',-->
-<!--'eksmisja',-->
-<!--'ochrona praw lokatorskich',-->
-<!--'projekty umów',-->
-<!--'przywrócenie naruszonego posiadania'-->
-<!--]">-->
-<!--</realm>-->
-<!--<realm-->
-<!--title="PRAWO ADMINISTRACYJNE"-->
-<!--image="./res/administracyjne.png"-->
-<!--v-bind:tmp="[-->
-<!--'zaskarżanie planu zagospodarowania przestrzennego',-->
-<!--'proces budowlany',-->
-<!--'wpis do ewidencji gruntów',-->
-<!--'wywłaszczenia',-->
-<!--'procedura planistyczna'-->
-<!--]">-->
-<!--</realm>-->
+<!--//<button class="col-12 col-sm-6 col-lg-4 realm ">-->
+    <!--//    <div class="realm-main"-->
+    <!--//         v-bind:style="{ backgroundImage: 'url(' + image + ')' }">-->
+    <!--//        <h1>{{title}}</h1>-->
+    <!--//        <div class="realm-description">-->
+    <!--//            <ul>-->
+    <!--//                <li v-for="item in tmp">-->
+    <!--//                    {{ item }}<br>-->
+    <!--//                </li>-->
+    <!--//            </ul>-->
+    <!--//        </div>-->
+    <!--//    </div>-->
+    <!--//-->
+    <!--//</button>-->
+<!--<div class="flip-card">-->
+    <!--<div class="flip-card-inner">-->
+        <!--<div class="flip-card-front">-->
+            <!--<img src="res/logo.png" alt="Avatar" style="width:300px;height:300px;">-->
+        <!--</div>-->
+        <!--<div class="flip-card-back">-->
+            <!--<h1>John Doe</h1>-->
+            <!--<p>Architect & Engineer</p>-->
+            <!--<p>We love that guy</p>-->
+        <!--</div>-->
+    <!--</div>-->
 <!--</div>-->
-<!--</div>-->
+
+<div id="zakres_praktyki">
+    <div class="separator"></div>
+    <div class="uni-margins container">
+        <h1>ZAKRES PRAKTYKI</h1>
+        <div class="row">
+            <realm
+                    title="PRAWO CYWILNE"
+                    image="./res/cywilne.png"
+                    v-bind:tmp="[
+'windykacja należności',
+'sprawy o zapłatę z tytułu wykonania umów',
+'odszkodowania i zadośćuczynienia',
+'szkody komunikacyjne',
+'spory konsumenckie',
+'ochrona dóbr osobistych',
+'skargi pauliańskie',
+'projekty umów i regulaminów']">
+            </realm>
+            <realm
+                    title="PRAWO GOSPODARCZE"
+                    image="./res/gospodarcze1.png"
+                    v-bind:tmp="[
+'zakładanie podmiotów prawnych',
+'projekty uchwał, umów i statutów',
+'wpisy do KRS',
+'odpowiedzialność członków organów spółki',
+'windykacja należności',
+'kompleksowa obsługa prawna',
+]">
+            </realm>
+            <realm
+                    title="PRAWO SPADKOWE"
+                    image="./res/spadkowe1.png"
+                    v-bind:tmp="[
+'stwierdzenie nabycia spadku',
+'dział spadku',
+'spis inwentarza',
+'zachowek',
+'niegodność dziedziczenia',
+'zabezpieczenie spadku',
+]">
+            </realm>
+            <realm
+                    title="PRAWO RODZINNE"
+                    image="./res/rodzinne.png"
+                    v-bind:tmp="[
+'rozwody i separacje',
+'zmiany w zakresie sposobu wykonywania władzy rodzicielskiej',
+'alimenty',
+'kontakty',
+'umowy małżeńskie majątkowe',
+'podział majątku dorobkowego małżonków',
+'ustalenie bądź zaprzeczenie ojcostwa',
+'ubezwłasnowolnienie, opieka i kuratela'
+]">
+            </realm>
+            <realm
+                    title="PRAWO RZECZOWE"
+                    image="./res/rzeczowe.png"
+                    v-bind:tmp="[
+'zniesienie współwłasności',
+'służebności gruntowe',
+'odszkodowanie za bezumowne korzystanie z nieruchomości',
+'eksmisja',
+'ochrona praw lokatorskich',
+'projekty umów',
+'przywrócenie naruszonego posiadania'
+]">
+            </realm>
+            <realm
+                    title="PRAWO ADMINISTRACYJNE"
+                    image="./res/administracyjne.png"
+                    v-bind:tmp="[
+'zaskarżanie planu zagospodarowania przestrzennego',
+'proces budowlany',
+'wpis do ewidencji gruntów',
+'wywłaszczenia',
+'procedura planistyczna'
+]">
+            </realm>
+        </div>
+    </div>
+    <div class="separator"></div>
+</div>
+
+
 
 
 <div id="wspolpraca">
