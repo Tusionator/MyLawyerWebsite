@@ -7,11 +7,10 @@ var Realm = {
     props: {
     title: String,
     image: String,
-    tmp: Array
+    description_list: Array
     },
     template:
         `
-
 <button class="col-12 col-sm-6 col-lg-4 realm ">
     <div class="realm-main">
         <div class="realm-title">
@@ -23,13 +22,12 @@ var Realm = {
         <div class="realm-description">
             <h1>{{title}}</h1>
             <ul>
-                <li v-for="item in tmp">
+                <li v-for="item in description_list">
                     {{ item }}<br>
                 </li>
             </ul>
         </div>
     </div>
-
 </button>
   `
 };
