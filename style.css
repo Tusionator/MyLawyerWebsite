@@ -252,6 +252,18 @@ li {
     height: 23em;
 }
 
+
+.table, .table td{
+    color: white;
+}
+
+.table a {
+    color: #eac15a;
+}
+.table .contact-icon {
+    width: 2em;
+    padding-left: 0;
+}
 .footer {
     position: absolute;
     right: 0;

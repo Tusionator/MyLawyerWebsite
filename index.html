@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/153125f1f0.js"></script>
 
 </head>
 <body>
@@ -53,6 +54,7 @@
 
 </div>
 
+
 <div id="zakres_praktyki">
     <div class="separator"></div>
     <div class="uni-margins container">
@@ -61,7 +63,7 @@
             <realm
                     title="PRAWO CYWILNE"
                     image="./res/cywilne.png"
-                    v-bind:tmp="[
+                    v-bind:description_list="[
 'windykacja należności',
 'sprawy o zapłatę z tytułu wykonania umów',
 'odszkodowania i zadośćuczynienia',
@@ -74,7 +76,7 @@
             <realm
                     title="PRAWO GOSPODARCZE"
                     image="./res/gospodarcze1.png"
-                    v-bind:tmp="[
+                    v-bind:description_list="[
 'zakładanie podmiotów prawnych',
 'projekty uchwał, umów i statutów',
 'wpisy do KRS',
@@ -86,7 +88,7 @@
             <realm
                     title="PRAWO SPADKOWE"
                     image="./res/spadkowe1.png"
-                    v-bind:tmp="[
+                    v-bind:description_list="[
 'stwierdzenie nabycia spadku',
 'dział spadku',
 'spis inwentarza',
@@ -98,7 +100,7 @@
             <realm
                     title="PRAWO RODZINNE"
                     image="./res/rodzinne.png"
-                    v-bind:tmp="[
+                    v-bind:description_list="[
 'rozwody i separacje',
 'zmiany w zakresie sposobu wykonywania władzy rodzicielskiej',
 'alimenty',
@@ -112,7 +114,7 @@
             <realm
                     title="PRAWO RZECZOWE"
                     image="./res/rzeczowe.png"
-                    v-bind:tmp="[
+                    v-bind:description_list="[
 'zniesienie współwłasności',
 'służebności gruntowe',
 'odszkodowanie za bezumowne korzystanie z nieruchomości',
@@ -125,7 +127,7 @@
             <realm
                     title="PRAWO ADMINISTRACYJNE"
                     image="./res/administracyjne.png"
-                    v-bind:tmp="[
+                    v-bind:description_list="[
 'zaskarżanie planu zagospodarowania przestrzennego',
 'proces budowlany',
 'wpis do ewidencji gruntów',
@@ -197,18 +199,30 @@
                     allowfullscreen="">
             </iframe>
             <div id="contact-text">
-                Tel. 531286491<br>
-                e-mail:
-                <a href="mailto:tomasz.zielinski@kancelaria-tz.pl">tomasz.zielinski@kancelaria-tz.pl</a><br><br>
-                ul. Kraszewskiego 5<br>
-                05-800 Pruszków<br><br>
-                Godziny otwarcia sekretariatu:<br>
-                pon: 9-16<br>
-                wt: 9-18<br>
-                śr-pt: 9-16<br><br>
+
+              <table class="table table-borderless">
+                <tbody>
+                <tr>
+                  <td class="contact-icon"><i class="fa fa-phone-alt"></i></td>
+                  <td><a href="tel:+48-531-286-491">+48 531-286-491</a><br></td>
+                </tr>
+                <tr>
+                  <td class="contact-icon"><i class="fa fa-envelope"></i></td>
+                  <td><a href="mailto:tomasz.zielinski@kancelaria-tz.pl">tomasz.zielinski@kancelaria-tz.pl</a></td>
+                </tr>
+                <tr>
+                  <td class="contact-icon"><i class="fa fa-map-marker-alt"></i></td>
+                  <td>ul. Kraszewskiego 5<br>
+                    05-800 Pruszków<br><br>
+                    Godziny otwarcia sekretariatu:<br>
+                    pon: 9-16<br>
+                    wt: 9-18<br>
+                    śr-pt: 9-16<br></td>
+                </tr>
+                </tbody>
+              </table>
                 Celem umówienia się na spotkanie prosimy o kontakt telefoniczny. Istnieje możliwość spotkań poza wyżej
                 wskazanymi godzinami.
-
             </div>
         </div>
     </div>
