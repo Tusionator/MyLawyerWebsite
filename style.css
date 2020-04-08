@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    color: white;
+    color: lightgray;
     background-color: black;
     font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 0.9em;
@@ -104,18 +104,51 @@ li {
     background-size: cover;
     display: flex;
     justify-content: center;
-
 }
 
 #about {
-    background-image: radial-gradient(closest-side, #000, #000a, #0000 );
-    text-shadow: 2px 0 black, -1px 0 black, 0 1px black,0 -1px black;
+    background-image: radial-gradient(closest-side, #000, #000a, #0000);
+    text-shadow: 2px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
     margin-top: 6em;
     width: 50%;
 }
 
+#covid {
+    background: url("res/texture_light.jpg") repeat;
+}
+
+#covid-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#covid-title {
+    color: black;
+    width: 40%;
+}
+
+#covid-txt {
+    width: 45%;
+    color: black;
+}
+
 #zakres_praktyki {
     background: #050601;
+}
+
+.shadow-light {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 1em;
+}
+
+.shadow {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .realm {
@@ -253,17 +286,19 @@ li {
 }
 
 
-.table, .table td{
+.table, .table td {
     color: white;
 }
 
 .table a {
     color: #eac15a;
 }
+
 .table .contact-icon {
     width: 2em;
     padding-left: 0;
 }
+
 .footer {
     position: absolute;
     right: 0;
@@ -300,8 +335,12 @@ li {
         margin: auto;
     }
 
-    #page {
-        background: url('images/white-zigzag-mobile.png') repeat-x;
+    #covid-title {
+        width: 100%;
+    }
+
+    #covid-txt {
+        width: 100%;
     }
 
     #about {
