@@ -41,29 +41,72 @@
 <div id="strona_glowna">
     <div class="uni-margins">
         <div id="about">
-            <p>
-                <b>Kancelaria Adwokacka Tomasza Zielińskiego</b> oferuje usługi prawne z zakresu m.in.
-                prawa cywilnego, prawa gospodarczego, prawa spadkowego, prawa rodzinnego, prawa rzeczowego
-                oraz prawa administracyjnego. Kancelaria świadczy pomoc prawną zarówno klientom indywidualnym,
-                jak i biznesowym. Rodzaj świadczonych usług jest szeroki i rozciąga się od porad prawnych
-                przez sporządzanie pism procesowych i przedsądowych aż po reprezentację w sprawach przed
-                sądami oraz urzędami.
-            </p>
+            <div class="shadow">
+                <h6>Szanowni Państwo!</h6>
+                <p>Wychodząc naprzeciw oczekiwaniom Klientów, Kancelaria uruchomiła świadczenie usług prawnych online
+                    za pośrednictwem komunikatora
+                    <span style="white-space: nowrap;">Skype <i class="fa fa-skype" style="color: #00aff0"></i></span>
+                    oraz
+                    <span style="white-space: nowrap;">WhatsApp <i class="fa fa-whatsapp" style="color: #25D366"></i></span>
+                    , bez konieczności osobistego stawiania się w siedzibie firmy.</p>
+                <p>Dodatkowo, biorąc pod uwagę pojawienie się szeregu aspektów prawnych związanych z wybuchem
+                    pandemii COVID-19, Kancelaria rozszerzyła swoją ofertę o m.in. następujące usługi: </p>
+                <ul style="margin: 0">
+                    <li>przywracanie terminów dla czynności spóźnionych na skutek siły wyższej;</li>
+                    <li>podważanie umów niemożliwych do wykonania na skutek siły wyższej;</li>
+                    <li>renegocjacje umów oraz sposobu i terminu ich wykonania z wierzycielami;</li>
+                    <li>zmiana wysokości alimentów z uwagi na zmiany możliwości zarobkowych;</li>
+                    <li>obrona przed zarzutem przedawnienia;</li>
+                    <li>obrona przed karą umowną nałożoną za przestój spowodowany siłą wyższą.</li>
+                </ul>
+            </div>
         </div>
     </div>
+</div>
 
+<div id="covid">
+    <div class="separator"></div>
+    <div class="uni-margins">
+        <div id="covid-all">
+            <div id="covid-title">
+                <h1 style="margin: 0; padding: 0">
+                    Nadzwyczajne okoliczności związane z <span style="white-space: nowrap;">COVID-19</span>
+                </h1>
+            </div>
+            <div id="covid-txt" class="shadow-light">
+                Szybkie rozprzestrzenianie się wirusa COVID-19 jest, mając na względzie kilkadziesiąt ostatnich lat,
+                bezprecedensową okolicznością, powodującą szereg całkowicie nowych wyzwań. Stąd nie sposób wymienić i
+                opisać wszystkich nowych problemów prawnych, które pojawiają się niemal codziennie oraz które będą pojawiały
+                się długo po zakończeniu pandemii, a będą z nią silnie związane. Stąd zapraszamy Państwa do kontaktu z Kancelarią,
+                która jest gotowa zadbać o zabezpieczenie Państwa majątkowych interesów w obliczu nowych trudności
+            </div>
+
+        </div>
+    </div>
+    <div class="separator"></div>
 </div>
 
 
 <div id="zakres_praktyki">
     <div class="separator"></div>
-    <div class="uni-margins container">
+    <div class="uni-margins">
         <h1>ZAKRES PRAKTYKI</h1>
-        <div class="row">
-            <realm
-                    title="PRAWO CYWILNE"
-                    image="./res/cywilne.png"
-                    v-bind:description_list="[
+        <div class="container">
+            <div>
+                <p>
+                    <b>Kancelaria Adwokacka Tomasza Zielińskiego</b> oferuje usługi prawne z zakresu m.in.
+                    prawa cywilnego, prawa gospodarczego, prawa spadkowego, prawa rodzinnego, prawa rzeczowego
+                    oraz prawa administracyjnego. Kancelaria świadczy pomoc prawną zarówno klientom indywidualnym,
+                    jak i biznesowym. Rodzaj świadczonych usług jest szeroki i rozciąga się od porad prawnych
+                    przez sporządzanie pism procesowych i przedsądowych aż po reprezentację w sprawach przed
+                    sądami oraz urzędami.
+                </p>
+            </div>
+            <div class="row">
+                <realm
+                        title="PRAWO CYWILNE"
+                        image="./res/cywilne.png"
+                        v-bind:description_list="[
 'windykacja należności',
 'sprawy o zapłatę z tytułu wykonania umów',
 'odszkodowania i zadośćuczynienia',
@@ -72,23 +115,24 @@
 'ochrona dóbr osobistych',
 'skargi pauliańskie',
 'projekty umów i regulaminów']">
-            </realm>
-            <realm
-                    title="PRAWO GOSPODARCZE"
-                    image="./res/gospodarcze1.png"
-                    v-bind:description_list="[
+                </realm>
+                <realm
+                        title="PRAWO GOSPODARCZE"
+                        image="./res/gospodarcze1.png"
+                        v-bind:description_list="[
 'zakładanie podmiotów prawnych',
 'projekty uchwał, umów i statutów',
 'wpisy do KRS',
 'odpowiedzialność członków organów spółki',
 'windykacja należności',
 'kompleksowa obsługa prawna',
+'upadłość konsumencka'
 ]">
-            </realm>
-            <realm
-                    title="PRAWO SPADKOWE"
-                    image="./res/spadkowe1.png"
-                    v-bind:description_list="[
+                </realm>
+                <realm
+                        title="PRAWO SPADKOWE"
+                        image="./res/spadkowe1.png"
+                        v-bind:description_list="[
 'stwierdzenie nabycia spadku',
 'dział spadku',
 'spis inwentarza',
@@ -96,11 +140,11 @@
 'niegodność dziedziczenia',
 'zabezpieczenie spadku',
 ]">
-            </realm>
-            <realm
-                    title="PRAWO RODZINNE"
-                    image="./res/rodzinne.png"
-                    v-bind:description_list="[
+                </realm>
+                <realm
+                        title="PRAWO RODZINNE"
+                        image="./res/rodzinne.png"
+                        v-bind:description_list="[
 'rozwody i separacje',
 'zmiany w zakresie sposobu wykonywania władzy rodzicielskiej',
 'alimenty',
@@ -110,11 +154,11 @@
 'ustalenie bądź zaprzeczenie ojcostwa',
 'ubezwłasnowolnienie, opieka i kuratela'
 ]">
-            </realm>
-            <realm
-                    title="PRAWO RZECZOWE"
-                    image="./res/rzeczowe.png"
-                    v-bind:description_list="[
+                </realm>
+                <realm
+                        title="PRAWO RZECZOWE"
+                        image="./res/rzeczowe.png"
+                        v-bind:description_list="[
 'zniesienie współwłasności',
 'służebności gruntowe',
 'odszkodowanie za bezumowne korzystanie z nieruchomości',
@@ -123,18 +167,19 @@
 'projekty umów',
 'przywrócenie naruszonego posiadania'
 ]">
-            </realm>
-            <realm
-                    title="PRAWO ADMINISTRACYJNE"
-                    image="./res/administracyjne.png"
-                    v-bind:description_list="[
+                </realm>
+                <realm
+                        title="PRAWO ADMINISTRACYJNE"
+                        image="./res/administracyjne.png"
+                        v-bind:description_list="[
 'zaskarżanie planu zagospodarowania przestrzennego',
 'proces budowlany',
 'wpis do ewidencji gruntów',
 'wywłaszczenia',
 'procedura planistyczna'
 ]">
-            </realm>
+                </realm>
+            </div>
         </div>
     </div>
     <div class="separator"></div>
@@ -145,45 +190,44 @@
     <div class="separator"></div>
     <div class="uni-margins">
         <h1>Współpraca</h1>
-        <p>Kancelaria oferuje świadczenie pomocy prawnej zarówno w swej siedzibie, jak i udział adwokata w czynnościach
-            poza
-            tą siedzibą (np. reprezentacja w sądach i organach, negocjacje, mediacja, oględziny rzeczoznawców). </p>
-        <p>
-            <b>Koszt porady prawnej wynosi 200 zł brutto.</b>
-        </p>
-        <p>
-            Ceny innych usług prawnych są ustalane indywidualnie zależnie od stopnia skomplikowania sprawy oraz nakładu
-            pracy adwokata. Wycena konkretnej usługi na życzenie Klienta następuje nieodpłatnie po uzyskaniu informacji
-            koniecznych do jej przedstawienia.
-        </p>
-        <p>
-            <b>W przypadku wygranej sprawy sądowej Sąd zgodnie z art. 98 Kodeksu postępowania cywilnego zasądza koszty
-                zastępstwa adwokackiego od strony przegrywającej zgodnie z wysokością stawek opisanych w w/w
-                rozporządzeniu.
-                W
-                takiej sytuacji koszty te są zasądzane na rzecz Klienta i Kancelaria nie traktuje ich jako dodatkowego
-                elementu
-                swojego honorarium.</b>
-        </p>
-        <p>
-            Zależnie od rodzaju sprawy oraz potrzeb Klienta Kancelaria oferuje różne sposoby rozliczania się:
-        <ul>
-            <li>ryczałt – wynagrodzenie w stawce z góry ustalonej, niezależne od liczby godzin pracy adwokata</li>
-            <li>stawka godzinowa – wielkość wynagrodzenia jest uzależniona od liczby przepracowanych przez adwokata w
-                związku ze
-                sprawą godzin
-            </li>
-            <li>ryczałt połączony ze stawką za udział w czynnościach procesowych – wynagrodzenie ryczałtowe powiększone
-                o
-                określoną kwotę za
-                każdorazowy udział adwokata w posiedzeniu lub rozprawie sądowej.
-            </li>
-        </ul>
-        </p>
-        <p>
-            Kancelaria daje możliwość płatności stawek ryczałtowych w ratach w sposób dogodny dla Klienta.<br>
-        </p>
-
+        <div class="shadow">
+            <p>Kancelaria oferuje świadczenie pomocy prawnej zarówno w swej siedzibie, za pomocą komunikatorów m.in. Skype oraz WhatsApp ,
+                jak i udział adwokata w czynnościach poza
+                tą siedzibą (np. reprezentacja w sądach i organach, negocjacje, mediacja, oględziny rzeczoznawców).
+                Kancelaria świadczy także usługi online </p>
+            <p>
+                Ceny innych usług prawnych są ustalane indywidualnie zależnie od stopnia skomplikowania sprawy oraz nakładu
+                pracy adwokata. Wycena konkretnej usługi na życzenie Klienta następuje nieodpłatnie po uzyskaniu informacji
+                koniecznych do jej przedstawienia.
+            </p>
+            <p>
+                <b>W przypadku wygranej sprawy sądowej Sąd zgodnie z art. 98 Kodeksu postępowania cywilnego zasądza koszty
+                    zastępstwa adwokackiego od strony przegrywającej zgodnie z wysokością stawek opisanych w w/w
+                    rozporządzeniu.
+                    W
+                    takiej sytuacji koszty te są zasądzane na rzecz Klienta i Kancelaria nie traktuje ich jako dodatkowego
+                    elementu
+                    swojego honorarium.</b>
+            </p>
+            <p>
+                Zależnie od rodzaju sprawy oraz potrzeb Klienta Kancelaria oferuje różne sposoby rozliczania się:
+            <ul>
+                <li>ryczałt – wynagrodzenie w stawce z góry ustalonej, niezależne od liczby godzin pracy adwokata</li>
+                <li>stawka godzinowa – wielkość wynagrodzenia jest uzależniona od liczby przepracowanych przez adwokata w
+                    związku ze
+                    sprawą godzin
+                </li>
+                <li>ryczałt połączony ze stawką za udział w czynnościach procesowych – wynagrodzenie ryczałtowe powiększone
+                    o
+                    określoną kwotę za
+                    każdorazowy udział adwokata w posiedzeniu lub rozprawie sądowej.
+                </li>
+            </ul>
+            </p>
+            <p>
+                Kancelaria daje możliwość płatności stawek ryczałtowych w ratach w sposób dogodny dla Klienta.
+            </p>
+        </div>
     </div>
     <div class="separator"></div>
 </div>
@@ -200,27 +244,35 @@
             </iframe>
             <div id="contact-text">
 
-              <table class="table table-borderless">
-                <tbody>
-                <tr>
-                  <td class="contact-icon"><i class="fa fa-phone-alt"></i></td>
-                  <td><a href="tel:+48-531-286-491">+48 531-286-491</a><br></td>
-                </tr>
-                <tr>
-                  <td class="contact-icon"><i class="fa fa-envelope"></i></td>
-                  <td><a href="mailto:tomasz.zielinski@kancelaria-tz.pl">tomasz.zielinski@kancelaria-tz.pl</a></td>
-                </tr>
-                <tr>
-                  <td class="contact-icon"><i class="fa fa-map-marker-alt"></i></td>
-                  <td>ul. Kraszewskiego 5<br>
-                    05-800 Pruszków<br><br>
-                    Godziny otwarcia sekretariatu:<br>
-                    pon: 9-16<br>
-                    wt: 9-18<br>
-                    śr-pt: 9-16<br></td>
-                </tr>
-                </tbody>
-              </table>
+                <table class="table table-borderless">
+                    <tbody>
+                    <tr>
+                        <td class="contact-icon"><i class="fa fa-phone-alt"></i></td>
+                        <td><a href="tel:+48-531-286-491">+48 531-286-491</a><br></td>
+                    </tr>
+                    <tr>
+                        <td class="contact-icon"><i class="fa fa-skype"></i></td>
+                        <td><a href="https://join.skype.com/invite/eH7JzCUdmcSn">Skype</a><br></td>
+                    </tr>
+                    <tr>
+                        <td class="contact-icon"><i class="fa fa-whatsapp"></i></td>
+                        <td><a href="https://wa.me/48531286491">WhatsApp</a><br></td>
+                    </tr>
+                    <tr>
+                        <td class="contact-icon"><i class="fa fa-envelope"></i></td>
+                        <td><a href="mailto:tomasz.zielinski@kancelaria-tz.pl">tomasz.zielinski@kancelaria-tz.pl</a></td>
+                    </tr>
+                    <tr>
+                        <td class="contact-icon"><i class="fa fa-map-marker-alt"></i></td>
+                        <td>ul. Kraszewskiego 5<br>
+                            05-800 Pruszków<br><br>
+                            Godziny otwarcia sekretariatu:<br>
+                            pon: 9-16<br>
+                            wt: 9-18<br>
+                            śr-pt: 9-16<br></td>
+                    </tr>
+                    </tbody>
+                </table>
                 Celem umówienia się na spotkanie prosimy o kontakt telefoniczny. Istnieje możliwość spotkań poza wyżej
                 wskazanymi godzinami.
             </div>
